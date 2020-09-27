@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+Test set: cucumber.Options.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 1.958 sec <<< FAILURE!
+Verifying adding place using AddPlaceAPI #1(Validating place APIs)  Time elapsed: 0.284 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "Add place payload with "OMJ House"	"English"	"Warsan	1"" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Add place payload with \"OMJ House\"	\"English\"	\"Warsan	1\"")
+public void add_place_payload_with_omj_house_english_warsan_1() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Verifying adding place using AddPlaceAPI #2(Validating place APIs)  Time elapsed: 0.031 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "Add place payload with "MJ House"	"English"	"Warsan 2"" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Add place payload with \"MJ House\"	\"English\"	\"Warsan {int}\"")
+public void add_place_payload_with_mj_house_english_warsan(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Verify if deleting place functionality is working(Validating place APIs)  Time elapsed: 1.064 sec  <<< ERROR!
+java.io.FileNotFoundException: C:\Users\owamusta\eclipse-workspace\APIFramework\src\test\java\resources\global.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:212)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)
+	at resources.Utils.getGlobalValue(Utils.java:43)
+	at resources.Utils.requestSpecification(Utils.java:27)
+	at stepDefinations.MyStepDefinations.add_place_payload_with_(MyStepDefinations.java:35)
+	at stepDefinations.Hooks.beforeScenario(Hooks.java:16)
+
